@@ -1,3 +1,5 @@
+import traceback
+
 import openpyxl
 
 
@@ -12,4 +14,5 @@ class Excel:
         except:
             print('Err in reading XL data')
             data = None
+            traceback.print_exc()
         return data
